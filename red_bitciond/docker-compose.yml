@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  bitcoind:
+    container_name: bitcoind
+    image: carlosalvaradodock/bitcoind-proyecto
+    ports:
+      - "18443:18443"
+      - "12005:12005"
+      - "12006:12006"
+    restart: always

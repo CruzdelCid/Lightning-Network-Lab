@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  Cruz:
+    container_name: Cruz
+    image: cruzdelcid/lnd:latest
+    ports:
+      - "9735:9735"
+    environment:
+      - server_bitcoindd=192.168.24.178
+    restart: always
